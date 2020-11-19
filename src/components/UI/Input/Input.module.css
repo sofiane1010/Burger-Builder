@@ -1,0 +1,54 @@
+.Input {
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb(156, 105, 57);
+  padding: 0 10px;
+}
+
+.Label {
+  display: block;
+  font: inherit;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.InputElement {
+  width: 100%;
+  display: block;
+  background-color: rgb(214, 163, 115);
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font: inherit;
+  border-radius: 5px;
+  color: rgb(139, 92, 47);
+}
+
+.InputElement:focus {
+  background-color: rgb(211, 158, 109);
+}
+
+.InputElement::placeholder {
+  color: rgb(139, 92, 47);
+}
+
+.InputElement:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgb(214, 163, 115) inset;
+}
+
+.Invalid {
+  border: 1px solid red;
+  box-shadow: 0 0 10px red;
+}
+
+.InvalidInput {
+  color: rgb(139, 92, 47);
+  font: inherit;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 90%;
+}

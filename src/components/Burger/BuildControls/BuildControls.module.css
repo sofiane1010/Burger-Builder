@@ -1,0 +1,76 @@
+.BuildControls {
+  width: 100%;
+  background-color: #cf8f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 1px #ccc;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.ControlButtons {
+  margin-top: 20px;
+}
+
+.ControlButtons button {
+  margin: 0 10px;
+  padding: 0.5rem 1.5rem;
+  font: inherit;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.ControlButtons .Clear {
+  background-color: rgb(214, 40, 10);
+}
+
+.ControlButtons .Clear:hover {
+  background-color: rgb(247, 50, 16);
+}
+
+.ControlButtons .Clear:active {
+  background-color: rgb(187, 35, 8);
+}
+
+.ControlButtons .Clear:disabled {
+  background-color: rgb(172, 146, 142);
+  cursor: not-allowed;
+}
+
+.ControlButtons .Purchase {
+  background-color: rgb(5, 150, 5);
+}
+
+.ControlButtons .Purchase:hover {
+  background-color: rgb(9, 175, 9);
+}
+
+.ControlButtons .Purchase:active {
+  background-color: rgb(5, 133, 5);
+}
+
+.ControlButtons .Purchase:disabled {
+  background-color: rgb(103, 119, 103);
+  cursor: not-allowed;
+}
+
+.ControlButtons .Purchase:not(:disabled),
+.ControlButtons .Clear:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+  33% {
+    transform: rotate(8deg);
+  }
+
+  66% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
